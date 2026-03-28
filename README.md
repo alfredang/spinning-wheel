@@ -2,6 +2,8 @@
 
 A modern, aesthetic spinning wheel web app built with plain HTML, CSS, and JavaScript.
 
+![Spinning Wheel Screenshot](screenshot.png)
+
 ## Features
 
 - **3–12 customizable entries** — type one per line, add/edit/remove freely
@@ -14,7 +16,7 @@ A modern, aesthetic spinning wheel web app built with plain HTML, CSS, and JavaS
 
 ## Demo
 
-[Live Demo](https://alfredang.github.io/spining-wheel/)
+[Live Demo](https://alfredang.github.io/spinning-wheel/)
 
 ## Tech Stack
 
