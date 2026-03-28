@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem 0;
+  padding: 2rem 1rem 1rem;
   overflow-x: hidden;
 }
 
@@ -112,8 +112,10 @@ body {
   gap: 0.6rem;
   flex-shrink: 0;
 }
-.btn {
+.btn-row .btn {
   flex: 1;
+}
+.btn {
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 0.7rem;
