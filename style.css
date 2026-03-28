@@ -171,8 +171,8 @@ body {
 
 .wheel-container {
   position: relative;
-  width: min(420px, 50vh);
-  height: min(420px, 50vh);
+  width: 520px;
+  height: 520px;
 }
 
 .wheel-container canvas {
@@ -236,11 +236,11 @@ body {
 /* ── Footer ── */
 .footer {
   width: 100%;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   font-size: 0.82rem;
-  color: #6b6589;
+  color: #9994b8;
   letter-spacing: 0.01em;
 }
 
