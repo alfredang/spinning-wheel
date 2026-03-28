@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spinning Wheel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Spinning Wheel</h1>
+  <p>Add your entries, spin, and let fate decide!</p>
+</div>
+
+<div class="app">
+  <!-- Controls -->
+  <div class="controls card">
+    <label for="entries">Entries <span class="counter" id="counter">5 / 12</span></label>
+    <textarea id="entries" placeholder="Enter one item per line…">Pizza Night
+Movie Marathon
+Board Games
+Karaoke
+Road Trip</textarea>
+    <div class="validation-msg" id="validation"></div>
+    <button class="btn btn-spin" id="spinBtn">Spin the Wheel</button>
+    <div class="btn-row">
+      <button class="btn btn-shuffle" id="shuffleBtn">Shuffle</button>
+      <button class="btn btn-reset" id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <!-- Wheel -->
+  <div class="wheel-area">
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="760" height="760"></canvas>
+    </div>
+    <div class="result">
+      <div class="result-text" id="result"></div>
+    </div>
+  </div>
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
