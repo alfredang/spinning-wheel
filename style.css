@@ -171,8 +171,8 @@ body {
 
 .wheel-container {
   position: relative;
-  width: 520px;
-  height: 520px;
+  width: min(420px, 50vh);
+  height: min(420px, 50vh);
 }
 
 .wheel-container canvas {
