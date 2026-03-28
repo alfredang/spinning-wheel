@@ -40,7 +40,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 960px;
+  max-width: 1060px;
   width: 100%;
 }
 
@@ -164,8 +164,8 @@ body {
 
 .wheel-container {
   position: relative;
-  width: 380px;
-  height: 380px;
+  width: 500px;
+  height: 500px;
 }
 
 .wheel-container canvas {
