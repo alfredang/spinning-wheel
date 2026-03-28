@@ -226,14 +226,32 @@ body {
   z-index: 100;
 }
 
+/* ── Footer ── */
+.footer {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #6b6589;
+  letter-spacing: 0.01em;
+}
+
 /* ── Responsive ── */
 @media (max-width: 740px) {
+  body { padding: 1.5rem 1rem 2rem; }
   .app { flex-direction: column; align-items: center; }
   .controls { width: 100%; max-width: 400px; }
-  .wheel-container { width: 320px; height: 320px; }
+  .wheel-container { width: min(320px, 85vw); height: min(320px, 85vw); }
   .header h1 { font-size: 1.8rem; }
+  .btn { padding: 0.85rem 1rem; font-size: 0.92rem; }
 }
 @media (max-width: 400px) {
-  .wheel-container { width: 280px; height: 280px; }
-  body { padding: 1.5rem 0.75rem 3rem; }
+  body { padding: 1.25rem 0.75rem 2rem; }
+  .header h1 { font-size: 1.5rem; }
+  .header p { font-size: 0.85rem; }
+  .wheel-container { width: min(280px, 90vw); height: min(280px, 90vw); }
+  .controls { padding: 1.25rem; }
+  .controls textarea { height: 160px; font-size: 0.9rem; }
+  .result-text { font-size: 1.2rem; }
 }
