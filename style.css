@@ -37,7 +37,7 @@ body {
 .app {
   display: flex;
   gap: 2.5rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1000px;
@@ -60,7 +60,7 @@ body {
 /* ── Controls Panel ── */
 .controls {
   width: 300px;
-  height: 420px;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
