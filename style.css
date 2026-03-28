@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 1rem 0;
   overflow-x: hidden;
 }
 
@@ -37,7 +37,7 @@ body {
 .app {
   display: flex;
   gap: 2.5rem;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -60,7 +60,6 @@ body {
 /* ── Controls Panel ── */
 .controls {
   width: 360px;
-  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -69,6 +68,7 @@ body {
   font-weight: 600;
   font-size: 0.9rem;
   color: #c4c0d8;
+  flex-shrink: 0;
 }
 .controls textarea {
   width: 100%;
@@ -103,12 +103,14 @@ body {
   color: #f87171;
   min-height: 1.2em;
   transition: opacity 0.25s;
+  flex-shrink: 0;
 }
 
 /* ── Buttons ── */
 .btn-row {
   display: flex;
   gap: 0.6rem;
+  flex-shrink: 0;
 }
 .btn {
   flex: 1;
@@ -130,6 +132,7 @@ body {
 }
 
 .btn-spin {
+  flex-shrink: 0;
   background: linear-gradient(135deg, #a78bfa, #7c3aed);
   color: #fff;
   box-shadow: 0 4px 16px rgba(124, 58, 237, 0.35);
@@ -232,8 +235,8 @@ body {
 /* ── Footer ── */
 .footer {
   width: 100%;
-  margin-top: auto;
-  padding: 2rem 1rem 1.5rem;
+  margin-top: 2rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   font-size: 0.82rem;
   color: #6b6589;
@@ -241,20 +244,24 @@ body {
 }
 
 /* ── Responsive ── */
-@media (max-width: 740px) {
-  body { padding: 1.5rem 1rem 1rem; }
+@media (max-width: 960px) {
   .app { flex-direction: column; align-items: center; }
-  .controls { width: 100%; max-width: 400px; }
-  .wheel-container { width: min(320px, 85vw); height: min(320px, 85vw); }
+  .controls { width: 100%; max-width: 420px; height: auto; margin-top: 0; }
+  .controls textarea { min-height: 150px; flex: none; }
+  .wheel-container { width: min(420px, 90vw); height: min(420px, 90vw); }
+}
+@media (max-width: 740px) {
+  body { padding: 1.5rem 1rem 0; }
   .header h1 { font-size: 1.8rem; }
   .btn { padding: 0.85rem 1rem; font-size: 0.92rem; }
+  .wheel-container { width: min(340px, 90vw); height: min(340px, 90vw); }
 }
 @media (max-width: 400px) {
-  body { padding: 1.25rem 0.75rem 1rem; }
+  body { padding: 1.25rem 0.75rem 0; }
   .header h1 { font-size: 1.5rem; }
   .header p { font-size: 0.85rem; }
-  .wheel-container { width: min(280px, 90vw); height: min(280px, 90vw); }
+  .wheel-container { width: min(300px, 92vw); height: min(300px, 92vw); }
   .controls { padding: 1.25rem; }
-  .controls textarea { height: 160px; font-size: 0.9rem; }
+  .controls textarea { min-height: 130px; font-size: 0.9rem; }
   .result-text { font-size: 1.2rem; }
 }
